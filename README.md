@@ -1,6 +1,6 @@
 * HADOOP
 
 
-** Hive queries
+* Hive queries
 
-** Pig scripts
+* Pig scripts
