@@ -19,6 +19,6 @@ public class DecryptTest {
 
 	@Test
 	public void testName() {
-		assertEquals(new Text("Robert Larson"), udf.evaluate(new Text("4d.?+57Óí(56.-8")));
+		assertEquals(new Text("Sridhar Iyer"), udf.evaluate(new Text("4d.?+57Óí(56.-8")));
 	}
 }
