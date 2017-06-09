@@ -3,6 +3,10 @@
 
 ### Instructions to execute
 
+* Create jar file to execute the wordcount program.
+
+> sbt package
+
 * Copy the HadoopFile.txt from src/main/resources folder to HDFS
 
 > hdfs dfs -copyFromLocal /home/siyer/spark/WordCount/src/main/resources/HadoopFile.txt /user/siyer/files
