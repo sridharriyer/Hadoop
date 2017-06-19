@@ -1,0 +1,6 @@
+transaction_id,product_id,user_id,purchase_amount,item_description
+1,1,1,300,nails
+2,1,2,600,nails
+3,1,2,300,nails
+4,2,3,100,screws
+5,1,1,50,hammer
