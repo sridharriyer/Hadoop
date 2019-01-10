@@ -6,6 +6,12 @@
   
    val country_count = airportFile.groupBy("iso_country").count().sort(desc("count"))
    
-   
+   // shows top countries
    country_count.show()
    
+
+// show regions in india
+
+val india = airportFile.select("iso_region").filter(col("iso_country").like("IN"))
+india.show()
+
