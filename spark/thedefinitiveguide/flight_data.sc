@@ -1,6 +1,5 @@
-
-// the file is not read gives exception
-// java.net.ConnectException: Call From sandbox-hdp.hortonworks.com/172.18.0.2 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+// make sure the filename and path is right...
+// use hdfs:// to be more specific
 val flightData2015 = spark
                      .read
                      .option("inferSchema", "true")
