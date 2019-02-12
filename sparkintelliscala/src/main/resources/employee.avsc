@@ -1,0 +1,23 @@
+{
+  "type" : "record",
+  "name" : "employee",
+  "namespace" : "com.org.avro",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string",
+    "doc"  : "Name of the employee"
+  }, {
+    "name" : "age",
+    "type" : "int",
+    "doc"  : "Employee age"
+  }, {
+    "name" : "salary",
+    "type" : "long",
+    "doc"  : "salary of the employee"
+  },{
+    "name" : "department",
+    "type" :  {"name": "dept", "type": "fixed","size": 3},
+    "doc"  : "Employee department code"
+  }  ],
+  "doc:" : "A basic schema for storing employee data"
+}
