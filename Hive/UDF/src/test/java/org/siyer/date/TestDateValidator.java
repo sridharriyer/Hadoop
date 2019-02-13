@@ -21,8 +21,22 @@ public class TestDateValidator {
     }
 
     @Test(expected = HiveException.class)
-    public void testInValidDate() throws HiveException {
+    public void testInValidLeapYearDate() throws HiveException {
         validateDate.evaluate(new Text("02/29/2019"), "MM/dd/yyyy");
     }
 
+    @Test(expected = HiveException.class)
+    public void testInValidDate() throws HiveException {
+        validateDate.evaluate(new Text("01/32/2019"), "MM/dd/yyyy");
+    }
+
+    @Test(expected = HiveException.class)
+    public void testInValidDateFormat() throws HiveException {
+        validateDate.evaluate(new Text("02-29-2019"), "MM/dd/yyyy");
+    }
+
+    @Test
+    public void testValidLeapYearDate() throws HiveException {
+        assertEquals(new Text("02/28/2020"), validateDate.evaluate(new Text("02/28/2020"), "MM/dd/yyyy"));
+    }
 }
