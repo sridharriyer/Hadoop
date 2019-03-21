@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "employee_schema",
+  "namespace" : "com.siyer.avro",
+  "fields" : [ {
+    "name" : "username",
+    "type" : "string",
+    "doc"  : "Name of the employee"
+  }, {
+    "name" : "designation",
+    "type" : "string",
+    "doc"  : "designation of employee"
+  }, {
+    "name" : "salary",
+    "type" : "long",
+    "doc"  : "salary"
+  } ],
+  "doc:" : "A basic schema for employee"
+}
